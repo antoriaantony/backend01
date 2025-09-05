@@ -4,7 +4,7 @@ servidor.get("/",(req,res)=>{
 
 })
 
-servidor.post ("/registro",(res,req)=> {
+servidor.post ("/registro",(req,res)=> {
     const { nombre,apellido,contra,correo} =req.body
-    res.send( nombre,apellido,contra,correo)
+    res.json( {nombre,apellido,contra,correo})
 })  
